@@ -282,6 +282,7 @@ def secy_add_equipment(request):
     else:
         return render(request,"Error.html")
 
+#booking manager approval added
 def booking_manager(request): #hall manager
     if request.user.is_authenticated:
         if request.user.designation == "Hall Manager":
